@@ -1,0 +1,53 @@
+<ion-content >
+  <div class="padding">
+
+    <div class="logo">
+<!--       <ion-icon color="light" name="sunny"></ion-icon>
+ --><!--      <ion-icon color="dark" name="contact"></ion-icon>
+ -->
+<!--   <ion-icon color="light" name="cloudy-night"></ion-icon>  -->
+    </div>
+
+   <ion-item color="transparent">
+    <!--placeholder "position="floating"" qui survol en focus -->
+  <ion-label position="floating">Email</ion-label>
+ <!--  récuperation des information entrer en input   -->
+  <ion-input type="email" [(ngModel)]="dataUser.email"></ion-input>
+  <ion-note slot="helper">Enter a valid email</ion-note>
+  <ion-note slot="valid">valid email</ion-note>
+  <ion-note slot="error">Invalid email</ion-note>
+</ion-item>
+
+    <ion-item color="transparent" >
+      <ion-label color="dark" position="floating">Mot de passe</ion-label>
+      <ion-input color="dark" type="password" [(ngModel)]= "dataUser.password" ></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" color="transparent" >
+      <ion-button color="dark" slot="end" fill="clear">Mot de passe oublié ?</ion-button>
+    </ion-item>
+    <!-- appel de la fonction login() au click sur connexion -->
+    <ion-button  class="btn" color="dark" expand="block" shape="round" fill="outline" (click)="login()">Connexion</ion-button>
+    <br>
+
+    <!-- navigation vers la page insecription <!--routerLink<!---->
+    <ion-button class="btn"  color="tertiary" expand="block" shape="round" routerLink="../login/sign-up">Inscription</ion-button>
+
+    <ion-item  color="transparent" class="ion-text-center" >
+      <ion-label color="dark" text-center>Ou connectez-vous avec</ion-label>
+    </ion-item>
+<!--   conexion via les réseaux sociaux-->
+<!--  mettre les deux botton en flex <!--  -->
+<div class="flex">
+      <ion-button color="primary" shape="round" >
+        <ion-icon slot="start" name="logo-facebook"></ion-icon>
+        Facebook
+      </ion-button>
+      <ion-button   shape="round" id="google" color="danger">
+        <ion-icon slot="start"  name="logo-google"></ion-icon>
+        Google
+      </ion-button>
+    </div>
+
+  </div>
+</ion-content>

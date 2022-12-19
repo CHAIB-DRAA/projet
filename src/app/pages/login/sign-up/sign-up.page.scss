@@ -1,0 +1,20 @@
+.entete{
+  display: flex;
+  flex-direction: column;
+  justify-items:center;
+  gap: 2rem;
+  width: 100vw;
+  margin: 2rem auto;
+
+
+
+}
+.btn{
+  width: 80vw;
+  margin: auto;
+}
+ion-back-button
+{
+  color: black;
+  font-weight: bolder;
+}

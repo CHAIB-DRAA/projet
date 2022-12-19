@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>declarer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+<ion-list>
+  <ion-radio-group [allowEmptySelection]="true" value="turtles" >
+    <ion-item color="dark">
+      <ion-label>Agression</ion-label>
+      <ion-radio slot="end" value="dogs"></ion-radio>
+    </ion-item>
+
+    <ion-item color="dark">
+      <ion-label>Aire fermé</ion-label>
+      <ion-radio slot="end" value="cats"></ion-radio>
+    </ion-item>
+
+    <ion-item color="dark">
+      <ion-label>Absence de lumiere</ion-label>
+      <ion-radio slot="end" value="turtles"></ion-radio>
+    </ion-item>
+
+    <ion-item color="dark">
+      <ion-label>suspect</ion-label>
+      <ion-radio slot="end" value="fish"></ion-radio>
+    </ion-item>
+    <ion-item>
+    <ion-label position="floating">Commentaire</ion-label>
+    <ion-input placeholder="Enter text"></ion-input>
+  </ion-item>
+  </ion-radio-group>
+</ion-list>
+</ion-content>

@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+capacitor-google-map {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+ion-content {
+  --background: none;
+}
+ion-searchbar{
+  width: 50%;
+  margin: auto;
+}
+.footer
+{
+ padding: 2rem;
+}
+#warning-btn
+{
+
+  transform: translateY(0rem);
+  z-index: 200000;
+}
